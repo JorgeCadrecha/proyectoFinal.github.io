@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Juego de memoria</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="container">
+        <h1>Juego de memoria de números</h1>
+        <div id="game-container"></div>
+        <div id="difficultySelector">
+            <label for="difficulty">Selecciona la dificultad:</label>
+            <select id="difficulty">
+                <option value="1">Fácil (3 números)</option>
+                <option value="2">Medio (5 números)</option>
+                <option value="3">Difícil (7 números)</option>
+            </select>
+        </div>
+        <button id="generateButton">Generar Números</button>
+        <button id="hideButton">Ocultar Números</button>
+        <button id="startButton">Empezar juego</button>
+        <button id="rulesButton">Reglas del Juego</button>
+
+    </div>
+
+    <div id="rulesPopup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <h2>Reglas del Juego</h2>
+            <p>Las reglas son muy sencillas:</p>
+            <p>1º- Haz clic en "Generar Números" para que se genere un orden</p>
+            <p>2º- Luego dale clic en "Ocultar Números" para esconder los números cuando estés preparado y los hayas memorizado</p>
+            <p>3º- Por último dale clic en "Empezar Juego" para comenzar a jugar</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    </body>
+</html>
